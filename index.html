@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<style type="text/css">
+@font-face {font-family: 'SMJGothicStd-Regular';
+     src: url("https://googledrive.com/host/0B4vnzhp4pOeRRFVVRnRQcmpjd1E/SMJGothicStd-Regular.otf.eot");
+     src: local('SMJGothicStd-Regular.eot'),
+     url("https://googledrive.com/host/0B4vnzhp4pOeRRFVVRnRQcmpjd1E/SMJGothicStd-Regular.woff") format("woff");}
+body{
+  background-color: black;
+  font-size: 20px;
+  font-family: 'SMJGothicStd-Regular';
+}
+      #box2 ul {overflow: hidden;}
+      #box2 li{list-style: none;
+        float: left; padding: 15px;
+      }
+      #box2 li:first-child {border-radius: 10px 0 0 10px;}
+      #box2 li:last-child {border-radius: 0 10px 10px 0;}
+
+      #box2 li:nth-child(2n) {background-color: none;}
+      #box2 li:nth-child(2n+1) {background-color: none;}
+      #box2 {
+        color: white;
+        display: table;
+        margin-left: auto;
+        margin-right: auto; 
+      }
+      #menu a:link     {color:white;text-decoration:none} 
+      #menu a:visited  {color:white;text-decoration:none} 
+      #menu a:active   {color:white;text-decoration:none} 
+      #menu a:hover    {color:#fffeb3;text-decoration:none}
+.first img{
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 90px;
+  width: 60%;
+  height: auto;
+      }
+  .second img{  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 90px;
+  width: 60%;
+  height: auto;
+      }
+      #myCanvas{
+        width: 50%;
+        height:50%;
+      }
+
+</style>
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid black;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 5;
+      var centerY = canvas.height / 5;
+      var radius =50;
+
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = '#f8c6b3';
+      context.fill();
+  
+ 
+  var p = document.getElementById("myCanvas");
+var ppp = p.getContext("2d");
+ppp.beginPath();
+ppp.arc(80, 80, 10, 0, 2 * Math.PI, false);
+ppp.fillStyle = "#00a17f";
+ppp.fill();
+  
+var ww = document.getElementById("myCanvas");
+var w = ww.getContext("2d");
+w.beginPath();
+w.fillStyle = "#3bab94";
+w.arc(120, 80, 10, 0, 2 * Math.PI, false);
+ppp.fillStyle = "00a17f";
+ppp.fill();
+  
+    var p = document.getElementById("myCanvas");
+var ppp = p.getContext("2d");
+ppp.beginPath();
+ppp.arc(80, 80, 3,0, 2 * Math.PI, false);
+ppp.fillStyle = "white";
+ppp.fill();
+  
+var ww = document.getElementById("myCanvas");
+var w = ww.getContext("2d");
+w.beginPath();
+w.fillStyle = "#3bab94";
+w.arc(120, 80, 3, 0, 2 * Math.PI, false);
+ppp.fillStyle = "white";
+ppp.fill();
+
+
+ 
+var i = document.getElementById("myCanvas");
+var ii = i.getContext("2d");
+ii.fillStyle = "#005b4d";  
+ii.fillRect(50,100,100,100);
+  
+ var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      context.beginPath();
+      context.arc(100, 80, 50, 0, Math.PI, true);
+      context.closePath();
+      context.lineWidth = 5;
+      context.fillStyle = '#d9a937';
+      context.fill();
+  
+      var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.moveTo(80,50);
+ 
+      context.fillStyle = '#dc8b3d';
+      context.fill();
+    ctx.lineTo(40,10);
+    ctx.lineTo(90,70);
+    ctx.fill();
+  
+        var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.moveTo(80,50);
+ 
+      context.fillStyle = '#dc8b3d';
+      context.fill();
+    ctx.lineTo(40,10);
+
+    ctx.lineTo(90,70);
+    ctx.fill();
+  
+        context.fillStyle = '#dc8b3d';
+      context.fill();
+    ctx.lineTo(40,10);
+    ctx.lineTo(90,70);
+    ctx.fill();
+  
+        var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.moveTo(120,50);
+ 
+      context.fillStyle = '#dc8b3d';
+      context.fill();
+    ctx.lineTo(160,10);
+    ctx.lineTo(110,70);
+    ctx.fill();
+        var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.moveTo(100,200);
+ 
+      context.fillStyle = '#0e320e';
+      context.fill();
+    ctx.lineTo(50,100);
+    ctx.lineTo(150,100);
+    ctx.fill();
+  
+  
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.moveTo(100,110);
+ 
+      context.fillStyle = 'red';
+      context.fill();
+    ctx.lineTo(90,95);
+    ctx.lineTo(110,95);
+    ctx.fill();
+
+
+
+
+
+
+
+
+
+
+
+var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 5;
+      var centerY = canvas.height / 5;
+      var radius =50;
+
+      context.beginPath();
+      context.arc(centerX+150, centerY, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = '#FFE4E1';
+      context.fill();
+
+ 
+  var p = document.getElementById("myCanvas");
+var ppp = p.getContext("2d");
+ppp.beginPath();
+ppp.arc(270, 80, 10, 0, 2 * Math.PI, false);
+ppp.fillStyle = "#1E90FF";
+ppp.fill();
+  
+var ww = document.getElementById("myCanvas");
+var w = ww.getContext("2d");
+w.beginPath();
+w.fillStyle = "#1E90FF";
+w.arc(230, 80, 10, 0, 2 * Math.PI, false);
+ppp.fillStyle = "00a17f";
+ppp.fill();
+  
+    var p = document.getElementById("myCanvas");
+var ppp = p.getContext("2d");
+ppp.beginPath();
+ppp.arc(230, 80, 3,0, 2 * Math.PI, false);
+ppp.fillStyle = "white";
+ppp.fill();
+  
+var ww = document.getElementById("myCanvas");
+var w = ww.getContext("2d");
+w.beginPath();
+w.fillStyle = "#3bab94";
+w.arc(270, 80, 3, 0, 2 * Math.PI, false);
+ppp.fillStyle = "white";
+ppp.fill();
+
+var i = document.getElementById("myCanvas");
+var ii = i.getContext("2d");
+ii.fillStyle = "#4169E1";  
+ii.fillRect(200,100,100,100);
+  
+var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      context.beginPath();
+      context.arc(197, 60, 10, -28, 0, Math.PI, true);
+      context.closePath();
+      context.lineWidth = 5;
+      context.fillStyle = '#E6E6FA';
+      context.fill();  
+  var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      context.beginPath();
+      context.arc(200, 70, 5, -28, 0, Math.PI, true);
+      context.closePath();
+      context.lineWidth = 5;
+      context.fillStyle = '#E6E6FA';
+      context.fill();  
+ var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      context.beginPath();
+      context.arc(302, 60, 10, -28, 0, Math.PI, true);
+      context.closePath();
+      context.lineWidth = 5;
+      context.fillStyle = '#E6E6FA';
+      context.fill();  
+  var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      context.beginPath();
+      context.arc(299, 70, 5, -28, 0, Math.PI, true);
+      context.closePath();
+      context.lineWidth = 5;
+      context.fillStyle = '#E6E6FA';
+      context.fill();  
+  var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      context.beginPath();
+      context.arc(250, 80, 50, 0,Math.PI, true);
+      context.closePath();
+      context.lineWidth = 5;
+      context.fillStyle = '#DCDCDC';
+      context.fill();  
+ 
+ 
+  var p = document.getElementById("myCanvas");
+var ppp = p.getContext("2d");
+ppp.beginPath();
+ppp.arc(220, 120, 13,0, 2 * Math.PI, false);
+ppp.fillStyle = "white";
+ppp.fill();
+var ww = document.getElementById("myCanvas");
+var w = ww.getContext("2d");
+w.beginPath();
+w.fillStyle = "#3bab94";
+w.arc(280, 120, 13, 0, 2 * Math.PI, false);
+ppp.fillStyle = "white";
+ppp.fill();
+
+  var p = document.getElementById("myCanvas");
+var ppp = p.getContext("2d");
+ppp.beginPath();
+ppp.arc(235, 150, 8,0, 2 * Math.PI, false);
+ppp.fillStyle = "white";
+ppp.fill();
+var ww = document.getElementById("myCanvas");
+var w = ww.getContext("2d");
+w.beginPath();
+w.fillStyle = "#3bab94";
+w.arc(265, 150, 8, 0, 2 * Math.PI, false);
+ppp.fillStyle = "white";
+ppp.fill();
+
+</script>
+<body>
+    <div class="second"><A HREF="#">
+<IMG SRC="https://6a06312fb6736d651f703751045773b21eb1d3b9.googledrive.com/host/0B4vnzhp4pOeRNXZrNmxCWnUyX0U/thor2_logo.jpg"></A>
+  </div>
+
+  <div id ="box2">
+  <hr>
+  <ul>
+  <li id='menu'><a href="줄거리.html">줄거리</a></li>
+  <li id='menu'><a href="배우소개.html">배우 소개</a></li>
+  <li id='menu'><a href="마블속신화.html">마블속 스토리</a></li>
+  <li id='menu'><a href="신화속 스토리.html">신화속 이야기</a></li>
+  </ul>
+  <hr>
+</div>
+  <div class="first">
+    <img src="https://6a06312fb6736d651f703751045773b21eb1d3b9.googledrive.com/host/0B4vnzhp4pOeRNXZrNmxCWnUyX0U/asdf.gif.gif" alt="1">
+ </div>
+</body>
+</html> 
